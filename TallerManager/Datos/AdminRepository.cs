@@ -21,10 +21,10 @@ namespace Datos
                 if (datos.Lector.Read())
                 {
                     Admin admin = new Admin(
-                        (int)datos.Lector["IdAdmin"],
+                        (int)datos.Lector["Id_admin"],
                         (string)datos.Lector["Nombre"],
-                        (string)datos.Lector["Email"],
-                        (string)datos.Lector["Password"]
+                        (string)datos.Lector["Email"]
+                        
                     );
                     return admin;
                 }

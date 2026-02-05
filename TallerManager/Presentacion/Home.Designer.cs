@@ -1,6 +1,6 @@
 ﻿namespace Presentacion
 {
-    partial class Home
+    partial class FrmHome
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.dgvClients = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).BeginInit();
             this.SuspendLayout();
             // 
-            // Home
+            // lblWelcome
+            // 
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Location = new System.Drawing.Point(28, 30);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(63, 13);
+            this.lblWelcome.TabIndex = 0;
+            this.lblWelcome.Text = "Bienvenido:";
+            // 
+            // dgvClients
+            // 
+            this.dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClients.Location = new System.Drawing.Point(49, 342);
+            this.dgvClients.Name = "dgvClients";
+            this.dgvClients.Size = new System.Drawing.Size(1133, 315);
+            this.dgvClients.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(49, 290);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(122, 287);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(220, 20);
+            this.textBox1.TabIndex = 3;
+            // 
+            // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1272, 888);
-            this.Name = "Home";
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgvClients);
+            this.Controls.Add(this.lblWelcome);
+            this.Name = "FrmHome";
             this.Text = "Home";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.DataGridView dgvClients;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

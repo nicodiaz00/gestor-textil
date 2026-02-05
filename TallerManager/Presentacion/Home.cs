@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominio;
 
 namespace Presentacion
 {
-    public partial class Home : Form
+    public partial class FrmHome : Form
     {
-        public Home()
+        public FrmHome()
         {
             InitializeComponent();
+        }
+        private void FrmHome_Load(object sender, EventArgs e)
+        {
+            lblWelcome.Text = $"Bienvenido, {Sesion.AdminLogeado.Nombre}!";
         }
     }
 }

@@ -16,7 +16,19 @@ namespace Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+
+            FrmLogin loginForm = new FrmLogin();
+            DialogResult result = loginForm.ShowDialog();
+            if(result == DialogResult.OK)
+            {
+                Application.Run(new FrmHome());
+            }
+            else
+            {
+                Application.Exit();
+            }
+
+                
         }
     }
 }

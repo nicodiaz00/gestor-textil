@@ -13,12 +13,12 @@ namespace Dominio
         public string Email { get; set; }
 
         public string Password { get; set; }
-        public Admin(int id, string nombre, string email, string pass)
+        public Admin(int id, string nombre, string email)
         {
             this.IdAdmin = id;
             this.Nombre = nombre;
             this.Email = email;
-            this.Password = pass;
+            
         }
 
     }
